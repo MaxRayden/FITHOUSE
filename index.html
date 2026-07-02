@@ -12,14 +12,17 @@
 
   <!-- Meta Pixel Code -->
   <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '2416394335521032');
     fbq('track', 'PageView');
   </script>
@@ -46,14 +49,16 @@
           Como mulheres que já desistiram da academia várias vezes voltam a se sentir <span class="text-lime">bonitas
             e confiantes</span> treinando em casa, sem precisar de horas livres.
         </h1>
+        <img src="IMAGENS/PNG/imagem-home.jpg" alt="Mulheres transformadas" class="hero-image" id="hero-img">
+
         <p class="hero-subtitle">
           Um protocolo de exercícios que ajuda mulheres ocupadas a voltar a confiar em si mesmas criando uma rotina
           que <span class="highlight-bg">cabe na vida real</span>, sem depender de academia e sem carregar a culpa de
           nunca conseguir continuar.
         </p>
-        <a href="https://pay.kiwify.com.br/qirj2DN" class="btn-cta" id="cta-hero">
+        <!-- <a href="https://pay.kiwify.com.br/qirj2DN" class="btn-cta" id="cta-hero">
           Quero voltar a confiar em mim e transformar meu corpo
-        </a>
+        </a> -->
       </div>
     </div>
   </section>
@@ -65,6 +70,7 @@
         <h2 class="emotional-title" id="emotional-headline">
           Você olha no espelho e sente que a mulher que conhecia <span class="text-lime">ficou para trás?</span>
         </h2>
+        <img src="IMAGENS/PNG/imagem-espelho.jpg" alt="Mulheres transformadas" class="hero-image" id="hero-img">
         <div class="emotional-text">
           <p>
             Ela não sofre apenas porque ganhou alguns quilos ou porque a barriga incomoda. <strong>Ela sofre porque
@@ -153,6 +159,9 @@
       <div class="method-content">
         <h2 class="method-title" id="method-headline">O Protocolo FitHouse: <span class="text-lime">Treino Real para a
             Vida Real</span></h2>
+
+        <img src="IMAGENS/PNG/imagem-treino.jpg" alt="Mulheres transformadas" class="hero-image" id="hero-img">
+
         <p class="method-text">
           O emagrecimento começa quando a sua confiança é reconstruída. Nosso protocolo foi desenhado para quem tem
           uma rotina corrida e não quer passar horas sofrendo em aparelhos.
@@ -270,6 +279,16 @@
           <li>Acesso completo ao Protocolo FitHouse</li>
           <li>Guia prático de constância e disciplina</li>
           <li>Acesso imediato no celular ou computador</li>
+          <br>
+          <p style="text-align: center; color: #D9FF36; font-size: 1.1rem;"><b>+ Bônus Exclusivo</b></p>
+          <li>12 Receitas Fitness para potencializar seus resultados</li>
+          <br>
+          <div style="text-align: center;">
+            <img src="IMAGENS/PNG/bonus.png" alt="Bônus Exclusivo"
+              style="width: 200px; height: auto; display: inline-block;">
+          </div>
+
+
         </ul>
       </div>
 

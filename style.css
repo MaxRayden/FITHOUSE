@@ -26,12 +26,17 @@
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background-color: var(--bg-color);
   color: var(--text-primary);
   font-family: var(--font-poppins);
   line-height: 1.6;
-  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -95,6 +100,7 @@ p {
 /* Glow Background Effects */
 .glow-bg {
   position: relative;
+  overflow: hidden;
 }
 
 .glow-bg::before {
@@ -118,6 +124,9 @@ header {
   backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
   z-index: 100;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
