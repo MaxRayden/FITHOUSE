@@ -941,7 +941,7 @@ footer p {
     font-size: 1.8rem !important;
   }
   
-  h2, .emotional-title, .cycle-title-area h2, .stats-title, .method-title, .manifesto-title, .checkout-headline {
+  h2, .emotional-title, .cycle-title-area h2, .stats-title, .method-title, .manifesto-title, .checkout-headline, .faq-title {
     font-size: 1.5rem !important;
   }
   
@@ -982,3 +982,50 @@ footer p {
     font-size: 2.5rem;
   }
 }
+
+/* FAQ Section */
+.faq {
+  background-color: var(--bg-color);
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.faq-img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.faq-img:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 991px) {
+  .faq-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+}
+
